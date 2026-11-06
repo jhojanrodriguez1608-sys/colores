@@ -1,0 +1,124 @@
+:root {
+  --dominante-900: #0C3B5A;
+  --secundario-500: #38BDF8;
+  --acento-500: #A7F3D0;
+  --neutral-50: #F3FAFF;
+  --neutral-900: #0F172A;
+  --blanco: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf9ff;
+  color: var(--neutral-900);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--dominante-900), var(--secundario-500));
+  color: var(--blanco);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.box {
+  background: var(--blanco);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--dominante-900);
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.swatch {
+  text-align: center;
+}
+
+.color {
+  height: 100px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.c1 { background: var(--dominante-900); }
+.c2 { background: var(--secundario-500); }
+.c3 { background: var(--acento-500); }
+.c4 { background: var(--neutral-50); border: 1px solid #dfeaf2; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cards article {
+  padding: 16px;
+  background: #f7fbff;
+  border-radius: 12px;
+}
+
+.mini {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.code {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.contrast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.contrast-card {
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.light {
+  background: var(--neutral-50);
+  color: var(--neutral-900);
+}
+
+.dark {
+  background: var(--dominante-900);
+  color: var(--blanco);
+}
